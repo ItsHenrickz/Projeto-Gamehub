@@ -20,7 +20,7 @@ if(mysqli_num_rows($resultado) > 0){
 
 ?>
 
-<h1>Alteraçao de dados do cliente.</h1>
+<h1>Alteração de dados do cliente.</h1>
 <form action="?pg=clientes-altera" method="post">
     <input type="hidden" name="id" value="<?=$id?>">
     <label>Nome:</label>
@@ -29,7 +29,7 @@ if(mysqli_num_rows($resultado) > 0){
     <input type="text" name="cidade" value="<?=$cidade?>" required><br>
     <label>Estado:</label>
     <input type="text" name="estado" value="<?=$estado?>"><br><br>
-    <input class="botao" type="submit" value="Cadastrar">
+    <input class="botao" type="submit" value="Atualizar">
 </form> 
 
 <?php
